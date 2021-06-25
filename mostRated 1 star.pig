@@ -20,4 +20,4 @@ finalMovies = FOREACH badMovie GENERATE nameLookup::movieTitle AS movieName,
 
 finalSort = ORDER finalMovies BY numRatings DESC;
 
-DUMP oldestFiveStarMovies;
+DUMP finalSort;
